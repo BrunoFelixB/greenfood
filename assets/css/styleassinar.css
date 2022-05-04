@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Overpass', sans-serif; 
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(45deg,#5E66F2, #05C7F2, #04D9B2, #05F283);
+    background-repeat: no-repeat;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+}
+
+#logo {
+    font-weight: bold;
+    color: #1f460b;
+    font-size: 40px;
+    text-shadow: 0.5px 0.5px 3px #e4e0e0c5;
+    padding: 20px;
+    transition: all 0.3s ease;
+    -webkit-text-stroke-width: 0.2px; /* largura da borda */
+    -webkit-text-stroke-color: #000; /* cor da borda */
+}
+
+#logo:hover {
+    color: #A1A60A;
+    text-shadow: none;
+    font-size: 39px;
+}
+
+.menu {
+    font-size: 25px;
+    transition: all 0.3s ease;
+}
+
+.menu:hover{
+    font-size: 29px;
+}
+
+.voltar {
+    justify-content: center;
+    padding: 20px;
+    font-size: 20px;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.voltar:hover {
+    background-color: #A1A60A;
+}
+
+h1 {
+    font-size: 50px;
+    margin-top: 10px;
+}
+
+.texto-container {
+    text-align: center;
+}
+
+.bt {
+    margin-top: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    color: white;
+    gap: 10px;
+    font-weight: bold;
+  }
+  
+#bt1 {
+    padding: 8px;
+    cursor: pointer;
+    background-color: black;
+    margin: 0;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+  
+#bt2 {
+    padding: 8px;
+    cursor: pointer;
+    background-color: black;
+    margin: 0;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+
+#bt1:hover {
+    background: #2CD626;
+    font-size: 14px;
+}
+  
+#bt2:hover {
+    background: #2CD626;
+    font-size: 14px;
+}
+
+form {
+    font-weight: bold;
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form :first-child {
+    margin-top: 10px;
+}
+
+#plano {
+    color: black;
+    margin-right: 10px;
+}
+
+form input[type="submit"] {
+    font-family: 'Overpass', sans-serif; 
+    font-weight: bold;
+    padding: 0.4rem;
+    color: white;
+    background: linear-gradient(to left, #5505A6, #290773, #041A59, #041340);
+    margin: 0;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    margin-top: 20px;
+    transition: all 1s ease;
+    font-size: 15px;
+}
+
+
+form input[type="submit"]:hover { 
+    background: linear-gradient(to right, #5505A6, #290773, #041A59, #041340);
+    font-size: 17px;
+}
+
+form input {
+    font-family: 'Overpass', sans-serif; 
+    margin-top: 1rem;
+    width: 250px;
+    outline: none;
+    padding: 0.5 rem;
+    border: 1px solid black;
+    transition: all 0.3s ease;
+}
+
+form input:hover {
+    width: 254px;
+}
+
+form label {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    margin-top: 2rem;
+}
+
+#name {
+    padding: 8px;
+}
+
+#sobrenome {
+    padding: 8px;
+}
+
+#email {
+    padding: 8px;
+}
+
+#senha {
+    padding: 8px;
+}
+
+input, select {
+    box-shadow: 0.5px 0.5px 3px black;
+    border-radius: 3px;
+}
+
+#plano {
+    font-size: 15px;
+}
+
+
+@media (max-width: 400px) {
+
+ #texto {
+      text-align: center;
+      font-size: 50px;
+      color: black;
+      text-shadow: 0.5px 0.5px 2px rgb(65, 63, 63);
+      
+}
+    
+#logo {
+      font-weight: bold;
+      color: #C9D955;
+      font-size: 20px;
+      text-shadow: 0.5px 0.5px 3px #e4e0e0c5;
+      padding: 20px;
+      transition: all 0.3s ease;
+      -webkit-text-stroke-width: 0.2px; /* largura da borda */
+      -webkit-text-stroke-color: #000; /* cor da borda */
+}
+    
+#logo:hover {
+      color: #A1A60A;
+      text-shadow: none;
+      font-size: 19px;
+}
+    
+.menu {
+      padding: 15px;
+      font-size: 15px;
+      transition: all 0.3s ease;
+}
+    
+.menu:hover {
+      font-size: 16px;
+}
+
+#texto {
+        font-size: 30px;
+}
+
+form input[type="submit"] { 
+       margin-bottom: 50px;
+}
+    
+}
+
+footer {
+    color: white;
+    clear: both;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-color: black;
+    background-size: 25% 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+
+
